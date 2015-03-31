@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Lost Lure Lodge</title>
+
+<link rel="stylesheet" href = "css/styles2.css" type='text/css'/> 
+ 
+<!--script type="text/javascript" src="scripts/jquery.js"></script-->
+    
+<script src='js/jquery-ui.min.js'></script>
+<script src='js/jquery.min.js'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+     
+
+<script>
+     $(function() {
+        $('#entry').fadeIn(1000).delay(1000).fadeOut(1000);
+     
+    
+        $('#cover').delay(2000).fadeIn(1000);
+         });
+        
+    /*NEED A MEDIA QUERY FOR <500PX TO SKIP SPLASH PAGE AND GO DIRECTLY TO THE COVERPAGE WITH NO-IMAGE BUTTONS!!*/    
+         
+    $(function() {
+        var pgPrv, pgNxt, pgCont;
+        var pgDiv = $('#div1');
+       
+        $('#page1').click(function(){
+            pgDiv.removeClass('show');
+            pgDiv = $('#div1');
+            pgCont = 'photospage2.html';
+            to_pages();
+        });
+        
+        $('#page2').click(function(){
+            pgDiv.removeClass('show');
+            pgDiv = $('#div2');
+            pgCont = 'lakespage.html';
+            to_pages();
+        });
+        $('#page3').click(function(){
+            pgDiv.removeClass('show');
+            pgDiv = $('#div3');
+            pgCont = 'housepage.html';
+            to_pages();
+        });
+        
+        function to_pages() {
+    
+            //Moves buttons, removes images after first click:
+            $('.buttons').css('padding-top','1%');
+            $('#header').css('margin-top','10px');
+            $('button').addClass('topbtn');
+            $('button.btn > img').css('display','none');
+            
+            
+            //Displays content contianer
+            $('.pgContent').fadeIn(2000)
+                .css('display','inline-block');
+            
+            getData();
+            
+            function getData(){
+                pgDiv.load(pgCont);
+            };
+            pgDiv.addClass('show');
+            
+            
+        
+        };
+        
+    });
+        
+        
+    
+</script>
+</head>
+<body>
+    <!-- FOR SPLASH PAGE:-->
+    <div id='entry'>
+        <h2>Welcome to</h2>
+        <h1>Lost Lure Lodge</h1>
+        <h2 style="font-style: italic">A family retreat on Belleau Lake since 1968</h2>
+    </div>
+    
+    <!-- FOR MAIN BRANCH PAGE:-->
+    <div id='cover'>
+        <div id='header'> 
+            <h1 id='topper'>Lost Lure Lodge</h1>
+
+            <h2 id='tagline'>A family retreat on Belleau Lake since 1968</h2>
+        </div>     
+        <div class="buttons">	
+            <button id="page1" class='btn'><h4>The Memories</h4>
+                <img src="images/momnmax.jpg" width=275px></button>
+            <button id="page2" class='btn'><h4>The Area</h4>
+                <img src="images/loon.jpg" width=275px></button>
+            <button id="page3" class='btn'><h4>The House</h4>
+                <img src="images/camp1.jpg" width=275px></button>
+        </div>
+    </div>
+     
+    <!--CONTENT PAGES FOLLOW: pgContent is the container, divs 1-3 hold the content -->
+    <div class='pgContent'>
+        <div id='div1' class='item'>
+        </div>
+
+        <div id='div2' class='item'>
+        </div>
+
+        <div id='div3' class='item'>
+        </div>
+        
+        <div id='footer'>
+            <a href='#top'>BACK TO TOP</a>
+        </div>
+    </div>
+
+    <!--
+    <script> 
+
+    function myYr() {
+    var d = new Date();
+    var y = d.getFullYear();
+    document.getElementById('thisYr').innerHTML = y;
+    
+}
+    </script>  
+   <div class = 'footer'>testing</div>
+    -->
+</body>

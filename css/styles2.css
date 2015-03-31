@@ -1,0 +1,241 @@
+/* 
+styles1.css 
+*/
+
+* {
+    margin:0;
+    padding:0;
+    font-size: 100%;
+}
+
+a {
+    color:brown;
+    text-decoration: none;
+}
+
+body {
+    background: black url(../images/sunrise.jpg) no-repeat;
+    background-size: 100%;
+    text-align:center;
+
+}
+
+button {
+    margin:0 15px 15px 0;
+    width: 300px;
+    height: 210px;
+    background: beige;
+    border: none;
+    box-shadow: 0 0 20px beige;
+    color: brown;
+    font-family: 'Georgia', serif;
+    font-size:1em;
+    opacity:0.9;
+    
+
+}
+button h4{
+    margin: 5px 0 5px 0;
+}
+button:hover{
+    font-weight: bold;
+}
+.topbtn {
+    height: 50px;
+    background: none;
+    color: white;
+    border-radius: 25px;
+    /*border: 1px solid lightgray;*/
+    border: none;
+    text-shadow: 1px 1px 8px black;
+    box-shadow: none;
+}
+.btn:hover{
+    font-weight: bold;
+    width:305px;
+    /*height: 210px;*/
+    margin: 0px 12px 10px -2px;
+    box-shadow: 1px 1px 20px beige;
+    opacity: 1;
+}
+.btn img {
+    opacity: 1;
+}
+
+.buttons {
+    clear:both;
+    display: inline-block;
+    padding-left: 5px;
+    padding-top: 12%;
+    
+    }
+
+#cover {
+    display:none;
+    text-align: center;
+}
+
+
+#entry {
+    display: inline-block;
+    min-height: 95%;
+    text-align: center;
+    color: beige;
+    margin-top:18%;
+    font-size: 150%;
+    text-shadow: 1px 1px 8px  black;
+    
+}
+#entry h1 {
+    margin:2% 0 ;
+    font-size: 500%;
+}
+#entry h3 {
+    font-style: italic;
+}
+
+#footer  {
+    width : 100%;
+    clear:both;
+    text-align: center;
+    color: brown;
+    font-size: .7em;
+    display: block;
+    margin:15px 10px 0 10px;
+     
+}
+
+#tagine h3{
+    font-size: 250%;
+    font-style: italic;
+}
+
+
+/*#cover h1,h2,h3,h4 {
+    color: white;
+}*/
+
+h1,h2,h3,h4 {
+    font-size: 160%;
+    font-family: 'Georgia', serif;
+    font-weight:normal;
+}
+
+.item {
+    font-size: 125%;
+    display: none;
+    clear: both;
+    /*background-color: beige;
+    max-width: 960px;
+    width: 65%;
+    margin-top:2%;
+    display: none;
+    clear:both;
+    z-index: 10;
+    padding:1% 2%;*/
+}
+
+.itemImgLg {
+    margin:5px;
+    width:100%;
+    min-width: 400px;
+}
+.itemImgR{
+    clear:both;
+    float:right;
+    margin:20px 20px 10px 20px;
+    max-width: 400px;
+}
+.itemImgL{
+    /*clear:both;*/
+    float:left;
+    margin:10px 15px 10px 0px;
+    max-width: 400px;
+}
+.item p {
+    font-size: 1em;
+    text-align: left;
+    padding-top:.5em;
+}
+
+.pgContent {
+    background-color: beige;
+    max-width: 960px;
+    width: 65%;
+    min-width:450px;
+    /*height: 500px;*/
+    /*margin-top:1%;*/
+    display: none;
+    clear:both;
+    z-index: 10;
+    padding:1% 2%;
+    box-shadow: 1px 1px 20px beige;
+    
+}
+
+#header {
+    text-shadow: 1px 1px 8px black;
+    width: 100%;
+    min-width: 480px;
+    margin-top:50px;
+    }
+
+#tagline {
+    padding-top:5px;
+    margin-bottom: 10px;
+    /*width:45%;*/
+    font-size: 200%;
+    text-align:center;
+    font-style: italic;
+    color: white;
+    font-size: 150%;
+}
+
+#topper {
+    font-size: 4em;
+    /*margin: 2% 3% 0 14%;*/
+    padding-right: 0px;
+    min-width: 480px;
+    color:white;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.show{
+    display: block;
+}
+#slides {
+    /*display: none;*/
+    margin: 5px 30px 0 0;
+        
+}
+#slides img {
+    /*border:solid yellow;*/
+    width: 400px;
+    display: none;
+}
+
+
+.current img{
+    border: solid red;
+    display:block;
+}
+/*
+#slides div {
+    z-index: 0;
+    position: absolute;
+    
+}
+
+#slides div.previous {
+z-index: 1;
+}
+#slides div.current {
+    z-index: 2;
+}
+
+.foreground {
+    z-index: 3;
+}
+*/
