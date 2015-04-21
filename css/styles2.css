@@ -26,9 +26,9 @@ button {
     margin:0 15px 15px 0;
     width: 300px;
     height: 210px;
-    background: beige;
+    background: white;
     border: none;
-    box-shadow: 0 0 20px beige;
+    box-shadow: 0 0 20px white;
     color: brown;
     font-family: 'Georgia', serif;
     font-size:1em;
@@ -57,7 +57,7 @@ button:hover{
     width:305px;
     /*height: 210px;*/
     margin: 0px 12px 10px -2px;
-    box-shadow: 1px 1px 20px beige;
+    box-shadow: 1px 1px 20px white;
     opacity: 1;
 }
 .btn img {
@@ -82,7 +82,7 @@ button:hover{
     display: inline-block;
     min-height: 95%;
     text-align: center;
-    color: beige;
+    color: white;
     margin-top:18%;
     font-size: 150%;
     text-shadow: 1px 1px 8px  black;
@@ -164,7 +164,7 @@ h1,h2,h3,h4 {
     clear:both;
     z-index: 10;
     padding:1% 2%;
-    box-shadow: 1px 1px 20px beige;
+    box-shadow: 1px 1px 20px white;
     
 }
 
